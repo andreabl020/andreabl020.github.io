@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Arial";
+  }
+  
+  #forest {
+    background-image: url("bosque.png");
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+  }
+  
+  h1 {
+    font-size: 5em;
+    margin-bottom: 0;
+    color: white;
+  }
+  
+  p {
+    font-size: 2em;
+  }
+  
+  #animals {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+  }
+  
+  .animal {
+    position: absolute;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+  }
+  
+  #deer {
+    width: 200px;
+    bottom: 0;
+    left: 10%;
+    animation-name: deer-move;
+  }
+  
+  #rabbit {
+    width: 100px;
+    bottom: 0;
+    left: 30%;
+    animation-name: rabbit-move;
+  }
+  
+  #bird {
+    width: 50px;
+    bottom: 0;
+    left: 50%;
+    animation-name: bird-move;
+  }
+  
+  @keyframes deer-move {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(200px);
+    }
+  }
+  
+  @keyframes rabbit-move {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(100px);
+    }
+  }
+  
+  @keyframes bird-move {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(-50px);
+    }
+  }
+  
