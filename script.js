@@ -76,6 +76,12 @@ function iniciarReloj() {
 }
 
 function detenerReloj() {
-  clearInterval(intervalo);
-  
+  clearInterval(intervalo); 
+}
+
+function reiniciarReloj(){
+  detenerReloj();
+  tiempoActual = [0, 0, 0];
+  var relojElemento = document.getElementById('reloj');
+  relojElemento.innerHTML = '00:00:00';
 }
