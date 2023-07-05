@@ -1,8 +1,10 @@
 @import url('https://fonts.cdnfonts.com/css/luminari');
-*{
+
+* {
   background-color: black;
   font-family: 'Luminari', sans-serif;
 }
+
 .container {
   position: relative;
   text-align: center;
@@ -21,18 +23,18 @@
   color: goldenrod;
 }
 
-button{
+button {
   color: white;
   border: 2px solid goldenrod;
   border-radius: 10%;
 }
 
-.centro{
+.centro {
   display: block;
   margin: 10px auto;
 }
 
-.centro button{
+.centro button {
   width: 70px;
   height: 50px;
   border-radius: 50%;
@@ -42,8 +44,39 @@ button{
   font-size: 16px;
 }
 
-.sumas button{
+.sumas button {
   width: 100px;
   height: 70px;
   font-size: 16px;
+}
+
+/* Media queries para dispositivos móviles */
+@media only screen and (max-width: 600px) {
+  /* Estilos específicos para dispositivos con ancho máximo de 600px */
+  
+  /* Ajustes generales para dispositivos móviles */
+  * {
+    font-size: 14px;
+  }
+  
+  .container h1 {
+    top: 45%;
+    font-size: 40px;
+  }
+  .centro{
+    margin-left: 24%;
+  }
+  .centro button {
+    width: 100px;
+    height: 100px;
+    font-size: 14px;
+    margin-left: 5%;
+  }
+  
+  .sumas button {
+    width: 100px;
+    height: 100px;
+    font-size: 14px;
+    margin-top: 10%;
+  }
 }
