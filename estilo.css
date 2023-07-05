@@ -1,26 +1,30 @@
 *{
-    background-color: black;
+  background-color: black;
 }
 .container {
-    position: relative;
-    text-align: center;
-  }
-  
-  .container img {
-    display: block;
-    margin: 0 auto;
-  }
-  
-  .container h1 {
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: goldenrod;
-  }
+  position: relative;
+  text-align: center;
+}
 
-  button{
-    color: white;
-    border: 2px solid goldenrod;
-  }
-  
+.container img {
+  display: block;
+  margin: 0 auto;
+}
+
+.container h1 {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: goldenrod;
+}
+
+button{
+  color: white;
+  border: 2px solid goldenrod;
+}
+
+.centro{
+  display: block;
+  margin: 10px auto;
+}
