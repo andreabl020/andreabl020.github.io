@@ -18,4 +18,9 @@
     transform: translate(-50%, -50%);
     color: goldenrod;
   }
+
+  .button{
+    color: white;
+    border: goldenrod;
+  }
   
