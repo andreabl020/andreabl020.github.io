@@ -73,7 +73,9 @@ button {
     font-size: 14px;
     margin-left: 5%;
   }
-  
+  .sumas{
+    margin-left: 10%;
+  }
   .sumas button {
     width: 100px;
     height: 100px;
