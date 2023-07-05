@@ -1,5 +1,7 @@
+@import url('https://fonts.cdnfonts.com/css/luminari');
 *{
   background-color: black;
+  font-family: 'Luminari', sans-serif;
 }
 .container {
   position: relative;
@@ -22,7 +24,7 @@
 button{
   color: white;
   border: 2px solid goldenrod;
-  border-radius: 100%;
+  border-radius: 10%;
 }
 
 .centro{
@@ -31,11 +33,17 @@ button{
 }
 
 .centro button{
-  width: 50px;
+  width: 70px;
   height: 50px;
   border-radius: 50%;
-  background-color: #007bff;
+  background-color: goldenrod;
+  border: 2px solid gold;
   color: #fff;
-  border: none;
+  font-size: 16px;
+}
+
+.sumas button{
+  width: 100px;
+  height: 70px;
   font-size: 16px;
 }
