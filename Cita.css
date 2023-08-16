@@ -1,0 +1,222 @@
+@import url("https://fonts.cdnfonts.com/css/long-path");
+@import url("https://fonts.googleapis.com/css?family=Mukta:700");
+/* Estilos generales */
+h1 {
+  font-family: "Long Path", sans-serif;
+  font-size: 35px;
+}
+footer i {
+  width: 10%;
+  font-size: 36px;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh; /* Ajusta el alto de la pantalla */
+  background-image: url("./marmol.jpg");
+  background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el fondo */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+
+/* Estilos para el encabezado */
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  color: black;
+  background-image: url("./banner.jpg");
+  border-bottom: 1px solid #ddd;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 150px;
+  border: #78573f solid 1px;
+  background-image: url("./fondo.jpg");
+  border-radius: 50%; /* Hace que el elemento sea un círculo */
+  color: black;
+  font-family: "Long Path", sans-serif;
+  font-size: 35px;
+}
+
+.main-header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 300px;
+}
+.nav-left {
+  margin-left: 4%;
+}
+
+.nav-right {
+  margin-right: 4%;
+}
+
+.main-header nav a {
+  color: black;
+  text-decoration: none;
+  font-family: "Long Path", sans-serif;
+  font-size: 40px;
+}
+
+h2 {
+    font-size: 45px;
+    margin-bottom: 10px;
+    font-family: "Long Path", sans-serif;
+  }
+
+  .calendar-container {
+    width: 300px;
+    margin: 0 auto;
+  }
+  
+  .calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    padding: 10px;
+  }
+  
+  .day {
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .current-month {
+    background-color: #f0f0f0;
+  }
+  
+  .selected {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .disabled {
+    opacity: 0.3;
+    pointer-events: none;
+  }
+  .hour-separator {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 10px;
+  }
+  
+  .hour-link {
+    text-decoration: none;
+    background-color: #f0f0f0;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #333;
+  }
+  
+  .hour-separator {
+    display: flex;
+    align-items: center;
+    gap: 3px; /* Ajusta el valor para cambiar la separación entre números */
+    margin-top: 10px;
+  }
+  
+  .hour-link {
+    text-decoration: none;
+    background-color: #f0f0f0;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #333;
+  }
+  
+  .separator-line {
+    flex-grow: 1;
+    border: none;
+    border-top: 1px dashed #ccc;
+    margin: 0;
+  }
+  
+  /* Estilos para el pie de página */
+  .main-footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #be9d86; /* Cambio de color */
+    color: white;
+  }
+  
+  .social-media {
+    margin-bottom: 20px;
+  }
+  
+  .social-media img {
+    max-width: 100px;
+  }
+  a{
+    text-decoration: none;
+  }
+  /* CSS */
+  .button-56 {
+    align-items: center;
+    background-color: #fee6e3;
+    border: 2px solid #111;
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: #111;
+    cursor: pointer;
+    display: flex;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    height: 48px;
+    justify-content: center;
+    line-height: 24px;
+    max-width: 100%;
+    padding: 0 25px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .button-56:after {
+    background-color: #111;
+    border-radius: 8px;
+    content: "";
+    display: block;
+    height: 48px;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    top: -2px;
+    transform: translate(8px, 8px);
+    transition: transform 0.2s ease-out;
+    z-index: -1;
+  }
+  
+  .button-56:hover:after {
+    transform: translate(0, 0);
+  }
+  
+  .button-56:active {
+    background-color: #ffdeda;
+    outline: 0;
+  }
+  
+  .button-56:hover {
+    outline: 0;
+  }
+  
+  @media (min-width: 768px) {
+    .button-56 {
+      padding: 0 40px;
+    }
+  }

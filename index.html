@@ -1,25 +1,294 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Relojito</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="estilo.css">
-  <script src="script.js"></script>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/4348289818.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
 
-</head>
-<body>
-    <div class="container">
- <img src="fondo.jpg">
-    <h1 id="reloj">00:00:00</h1>
-</div>
-<div class="centro">
-  <button onclick="iniciarReloj()">Iniciar</button>
-  <button onclick="detenerReloj()">Detener</button>
-  <button onclick="reiniciarReloj()">Reiniciar</button>
-</div>
-<div class="sumas">
-  <button onclick="sumarHora()">Sumar una hora</button>
-  <button onclick="sumarMinutos()">Sumar un minuto</button>
-</div>
-</body>
+    <link rel="stylesheet" href="./index.css" />
+    <title>Mi Página de Peluquería</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <nav class="nav-left">
+        <ul>
+          <li><a href="./index.html">Inicio</a></li>
+          <li><a href="./Servicios.html">Servicios</a></li>
+        </ul>
+      </nav>
+      <div class="logo">
+        <a>Nombre Peluqueria</a>
+      </div>
+      <nav class="nav-right">
+        <ul>
+          <li><a href="./Galeria.html">Galería</a></li>
+          <li><a href="./Contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="carousel-section">
+      <div class="carousel-container">
+        <div class="carousel">
+          <div class="carousel-slide">
+            <img src="pelo1 (1).jpg" alt="Imagen 1" />
+          </div>
+          <div class="carousel-slide">
+            <img src="pelo2 (1).jpg" alt="Imagen 2" />
+          </div>
+          <div class="carousel-slide">
+            <img src="pelo3 (1).jpg" alt="Imagen 3" />
+          </div>
+          <div class="carousel-slide">
+            <img src="pelo4 (1).jpg" alt="Imagen 4" />
+          </div>
+          <div class="carousel-slide">
+            <img src="pelo5 (1).jpg" alt="Imagen 5" />
+          </div>
+          <div class="carousel-slide">
+            <img src="pelo6 (1).jpg" alt="Imagen 6" />
+          </div>
+          <!-- Agrega más imágenes aquí -->
+        </div>
+      </div>
+    </section>
+    <div class="separador"></div>
+    <div class="container-fluid">
+      <div class="row justify-content-center">
+        <div class="col-md-8" style="margin-top: 2%">
+          <div class="card mb-4 card-appear" style="max-width: 100%">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img
+                  src="./pelo1.jpg"
+                  class="img-fluid rounded-start"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h1 class="card-title">Peluqueria Femenina</h1>
+                  <p class="card-text">
+                    Bienvenida a Nuestro Rincón de Belleza Femenina
+                  </p>
+
+                  <p class="card-text">
+                    En nuestra peluquería, entendemos la importancia de resaltar
+                    la belleza única de cada mujer. Nuestro equipo de estilistas
+                    altamente capacitados está aquí para brindarte una
+                    experiencia personalizada que te haga sentir segura y
+                    radiante. Desde cortes modernos y peinados elegantes hasta
+                    tratamientos capilares revitalizantes, estamos comprometidos
+                    a crear looks que reflejen tu estilo y personalidad.
+                    ¡Permítenos cuidar de ti y realzar tu belleza natural!
+                  </p>
+                  <br>
+                  <center><a href="./SeccionFemenina.html"><button class="button-56">Saber mas</button></a></center>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-8" style="margin-bottom: 1%">
+          <div class="card mb-3 card-appear" style="max-width: 100%">
+            <div class="row g-0">
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h1 class="card-title">Peluqueria Masculina</h1>
+                  <p class="card-text">
+                    Bienvenidos al Espacio de Estilo Masculino
+                  </p>
+
+                  <p class="card-text">
+                    En nuestra barbería, sabemos que la confianza comienza con
+                    un buen corte de cabello y un estilo impecable. Nuestro
+                    equipo de barberos expertos está dedicado a brindarte una
+                    experiencia de cuidado personalizada que se adapte a tu
+                    estilo de vida y preferencias. Desde cortes clásicos hasta
+                    tendencias modernas, estamos aquí para resaltar tu
+                    autenticidad y ayudarte a mantenerte fresco y seguro en cada
+                    paso del camino.
+                  </p>
+                  <br>
+                  <center><a href="./SeccionMasculina.html"><button class="button-56">Saber mas</button></a></center>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <img
+                  src="./peloHombre (1).jpg"
+                  class="img-fluid rounded-end"
+                  alt="..."
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="reviews">
+      <h1>Valoraciones de Clientes</h1>
+      <div class="google-reviews">
+        <!-- Insertar valoraciones de Google Maps aquí -->
+        <div class="rating">
+          <div class="stars">
+            <i class="fa-solid fa-star" style="color: #be9d86;"></i>
+            <i class="fa-solid fa-star" style="color: #be9d86;"></i>
+            <i class="fa-solid fa-star" style="color: #be9d86;"></i>
+            <i class="fa-solid fa-star" style="color: #be9d86;"></i>
+            <i class="fa-solid fa-star" style="color: #be9d86;"></i>
+          </div>
+        </div>
+      </div>
+      <br />
+      <section class="reviews-carousel">
+        <h1>Reseñas de Clientes</h1>
+        <div class="carousel-review">
+          <div class="review-card">
+            <h3 class="name">Ana García</h3>
+            <div class="stars">★★★★★</div>
+            <p class="review">
+              ¡Increíble experiencia en esta peluquería! Mi estilista entendió
+              perfectamente lo que quería y superó mis expectativas. El ambiente
+              es acogedor y el servicio es de primera categoría. Sin duda,
+              volveré.
+            </p>
+          </div>
+          <div class="review-card">
+            <h3 class="name">Ana García</h3>
+            <div class="stars">★★★★★</div>
+            <p class="review">
+              ¡Increíble experiencia en esta peluquería! Mi estilista entendió
+              perfectamente lo que quería y superó mis expectativas. El ambiente
+              es acogedor y el servicio es de primera categoría. Sin duda,
+              volveré.
+            </p>
+          </div>
+          <div class="review-card">
+            <h3 class="name">Ana García</h3>
+            <div class="stars">★★★★★</div>
+            <p class="review">
+              ¡Increíble experiencia en esta peluquería! Mi estilista entendió
+              perfectamente lo que quería y superó mis expectativas. El ambiente
+              es acogedor y el servicio es de primera categoría. Sin duda,
+              volveré.
+            </p>
+          </div>
+          
+
+          <!-- Repite la estructura de review-card para cada reseña -->
+        </div>
+      </section>
+      <h1>Donde nos encontramos</h1>
+      <section class="location-section">
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d379.29423788393404!2d-3.3565245650817617!3d40.48955655023301!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4249fcbb15d17b%3A0x3314bc4b2fc59404!2sPeluqueria%20Cristina%20Nacarino!5e0!3m2!1ses!2ses!4v1692110573917!5m2!1ses!2ses"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+        <div class="text-container">
+          <!-- Agrega más texto aquí -->
+          <i class="fa-solid fa-location-dot" style="color: #78573f">
+            C/ de Luis de Medina, 4, 28805 Alcalá de Henares, Madrid
+          </i>
+        </div>
+      </section>
+    </section>
+
+    <footer class="main-footer">
+      <div class="social-media">
+        <a href="#"
+          ><i class="fa-brands fa-facebook" style="color: #78573f"></i
+        ></a>
+        <a href="#"
+          ><i class="fa-brands fa-instagram" style="color: #78573f"></i
+        ></a>
+      </div>
+      <p>&copy; 2023 Mi Página de Peluquería | Todos los derechos reservados</p>
+    </footer>
+    <!-- ... (otros elementos HTML) ... -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $(".carousel").slick({
+          dots: false,
+          infinite: true,
+          speed: 1000,
+          slidesToShow: 5,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 3000,
+          prevArrow: false, // Desactivar botón de navegación "Previous"
+          nextArrow: false, // Desactivar botón de navegación "Next"
+          responsive: [
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 1,
+              },
+            },
+          ],
+        });
+      });
+      $(document).ready(function () {
+        $(".carousel-review").slick({
+          dots: false,
+          infinite: true,
+          speed: 1000,
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 3000,
+          prevArrow: false,
+          nextArrow: false,
+          responsive: [
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 1,
+              },
+            },
+          ],
+        });
+      });
+      $(document).ready(function () {
+        $(window).scroll(function () {
+          $(".card-appear").each(function () {
+            var position = $(this).offset().top;
+            var scroll = $(window).scrollTop();
+            var windowHeight = $(window).height();
+
+            if (position < scroll + windowHeight - 100) {
+              $(this).addClass("appear");
+            }
+          });
+        });
+      });
+    </script>
+  </body>
 </html>

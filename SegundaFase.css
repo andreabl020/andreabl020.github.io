@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  
+  .calendar-container {
+    width: 300px;
+    margin: 0 auto;
+  }
+  
+  .calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    padding: 10px;
+  }
+  
+  .day {
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .current-month {
+    background-color: #f0f0f0;
+  }
+  
+  .selected {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .disabled {
+    opacity: 0.3;
+    pointer-events: none;
+  }
+  .hour-separator {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 10px;
+  }
+  
+  .hour-link {
+    text-decoration: none;
+    background-color: #f0f0f0;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #333;
+  }
+  
+  .hour-separator {
+    display: flex;
+    align-items: center;
+    gap: 3px; /* Ajusta el valor para cambiar la separación entre números */
+    margin-top: 10px;
+  }
+  
+  .hour-link {
+    text-decoration: none;
+    background-color: #f0f0f0;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #333;
+  }
+  
+  .separator-line {
+    flex-grow: 1;
+    border: none;
+    border-top: 1px dashed #ccc;
+    margin: 0;
+  }
+  
+    

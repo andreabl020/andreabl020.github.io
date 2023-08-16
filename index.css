@@ -1,0 +1,302 @@
+@import url("https://fonts.cdnfonts.com/css/long-path");
+/* Estilos generales */
+h1 {
+  font-family: "Long Path", sans-serif;
+  font-size: 35px;
+}
+footer i {
+  width: 10%;
+  font-size: 36px;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: black;
+  background-image: url("./marmol.jpg");
+  background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el fondo */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+
+/* Estilos para el encabezado */
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  color: black;
+  background-image: url("./banner.jpg");
+  border-bottom: 1px solid #ddd;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 150px;
+  border: #78573f solid 1px;
+  background-image: url("./fondo.jpg");
+  border-radius: 50%; /* Hace que el elemento sea un círculo */
+  color: black;
+  font-family: "Long Path", sans-serif;
+  font-size: 35px;
+}
+
+.main-header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 300px;
+}
+.nav-left {
+  margin-left: 4%;
+}
+
+.nav-right {
+  margin-right: 4%;
+}
+
+.main-header nav a {
+  color: black;
+  text-decoration: none;
+  font-family: "Long Path", sans-serif;
+  font-size: 40px;
+}
+
+/* Estilos para el carrusel,el tamaño de las imagenes es 300 x 400 px*/
+.carousel-section {
+  background-color: rgba(120, 87, 63, 0.5);
+  padding: 50px 0;
+  text-align: center;
+  margin-left: 1%;
+  margin-right: 1%;
+  background-color: transparent; /* Color semitransparente */
+}
+
+.carousel-container {
+  max-width: 2000px;
+  margin: 0 auto;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  display: grid;
+  background-color: rgba(120, 87, 63, 0.5); /* Color semitransparente */
+  border-radius: 10px;
+  overflow: hidden; /* Añadido para ocultar contenido que exceda */
+  max-height: 900px; /* Altura máxima */
+}
+
+.carousel {
+  display: flex;
+  overflow: hidden;
+  flex-wrap: nowrap; /* Evitar el salto de línea */
+  align-items: stretch; /* Estirar las imágenes verticalmente */
+  transition: transform 0.3s ease-in-out; /* Agregada transición */
+}
+
+.carousel-slide {
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  overflow: hidden; /* Oculta cualquier contenido que exceda */
+  display: flex;
+  align-items: center; /* Centrar verticalmente */
+  justify-content: center; /* Centrar horizontalmente */
+  height: 100%; /* Ocupar todo el espacio vertical */
+}
+
+.carousel-slide img {
+  width: 100%; /* Asegura que la imagen ocupe todo el ancho */
+  height: auto; /* Permite que la altura se ajuste automáticamente */
+  max-height: 100%; /* Limita la altura máxima al contenedor */
+  object-fit: cover; /* Escala y recorta la imagen para ajustar */
+  transition: transform 0.3s ease-in-out;
+}
+
+.carousel-slide img:hover {
+  transform: scale(1.05); /* Ejemplo de aumento al pasar el cursor */
+}
+
+/* Estilos para las valoraciones */
+.reviews {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.reviews h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.stars i{
+  font-size: 200%;
+}
+
+/* Estilos para el pie de página */
+.main-footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #be9d86; /* Cambio de color */
+  color: white;
+}
+
+.social-media {
+  margin-bottom: 20px;
+}
+
+.social-media img {
+  max-width: 100px;
+}
+.rating {
+  display: inline-block;
+  font-size: 24px;
+}
+
+.button-56 {
+  align-items: center;
+  background-color: #fee6e3;
+  border: 2px solid #111;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #111;
+  cursor: pointer;
+  display: flex;
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  height: 48px;
+  justify-content: center;
+  line-height: 24px;
+  max-width: 100%;
+  padding: 0 25px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-56:after {
+  background-color: #111;
+  border-radius: 8px;
+  content: "";
+  display: block;
+  height: 48px;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  top: -2px;
+  transform: translate(8px, 8px);
+  transition: transform 0.2s ease-out;
+  z-index: -1;
+}
+
+.button-56:hover:after {
+  transform: translate(0, 0);
+}
+
+.button-56:active {
+  background-color: #ffdeda;
+  outline: 0;
+}
+
+.button-56:hover {
+  outline: 0;
+}
+a{
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  .button-56 {
+    padding: 0 40px;
+  }
+}
+.carousel-review {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+.review {
+  font-size: 1rem;
+  line-height: 1.4;
+}
+.name {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+.review-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+.review-card {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 10px;
+  max-width: 400px;
+}
+
+.location-section {
+  display: flex;
+  align-items: center;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.map-container {
+  flex: 1;
+  padding-right: 20px;
+  border: #78573f solid 2px;
+  border-radius: 10px;
+}
+
+.text-container {
+  flex: 1;
+  padding-left: 20px;
+  width: 30%;
+  height: 30%;
+}
+.Servicios {
+  background-color: #78573f;
+}
+
+/* Agrega este CSS a tu hoja de estilo o en línea */
+.card-appear {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.card-appear.appear {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.container-fluid {
+  margin-top: 3%;
+}
+
+.card-text {
+  font-size: 20px;
+}
+
+.card {
+  background-image: url("./fondo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.9; /* Agregar un nivel de transparencia */
+  background-size: 100%;
+}
+.separador {
+  background-image: url("./separador.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom; /* Ajusta la posición vertical */
+  background-color: #f5f5f5; /* Color de fondo en caso de que la imagen no cargue */
+  opacity: 0.8; /* Nivel de transparencia */
+}

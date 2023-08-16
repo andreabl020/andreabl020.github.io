@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calendario y Hora</title>
+<link rel="stylesheet" href="Cita.css">
+</head>
+<body>
+<div class="container">
+    <div class="hour-separator">
+        <a href="./PrimeraFasse.html" class="hour-link" id="hour1">&#10003;</a>
+        <hr class="separator-line">
+        <a href="./SegundaFase.html" class="hour-link" id="hour2">2</a>
+        <hr class="separator-line">
+        <a href="./TerceraFase.html" class="hour-link" id="hour3">3</a>
+        <!-- Agrega más números aquí -->
+      </div>
+  <div class="calendar-container">
+    <div class="calendar-header">
+      <button id="prevBtn">&lt;</button>
+      <h2 id="monthYear"></h2>
+      <button id="nextBtn">&gt;</button>
+    </div>
+    <div class="calendar">
+      <div class="days"></div>
+    </div>
+  </div>
+  <div class="time-container">
+    <h3>Selecciona una hora:</h3>
+    <select id="hourSelect">
+      <option value="08">08:00 AM</option>
+      <option value="09">09:00 AM</option>
+      <!-- Agrega más opciones de horas aquí -->
+    </select>
+  </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+<script src="SegundaFase.js"></script>
+</body>
+</html>
