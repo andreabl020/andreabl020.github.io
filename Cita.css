@@ -73,6 +73,8 @@ h2 {
   .calendar-container {
     width: 300px;
     margin: 0 auto;
+    background-image: url('./fondo.jpg');
+    border-radius: 5px;
   }
   
   .calendar-header {
@@ -116,6 +118,7 @@ h2 {
   
   .hour-link {
     text-decoration: none;
+    background-image: url('./fondo.jpg');
     background-color: #f0f0f0;
     padding: 5px 10px;
     border-radius: 5px;
@@ -140,7 +143,7 @@ h2 {
   .separator-line {
     flex-grow: 1;
     border: none;
-    border-top: 1px dashed #ccc;
+    border-top: 1px dashed #78573f;
     margin: 0;
   }
   
@@ -161,6 +164,7 @@ h2 {
   }
   a{
     text-decoration: none;
+    margin-left: 1%;
   }
   /* CSS */
   .button-56 {
@@ -213,6 +217,46 @@ h2 {
   
   .button-56:hover {
     outline: 0;
+  }
+
+  .cardcontainer{
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+
+  .card{
+    background-image: url('./fondo.jpg');
+  }
+
+  .card-title{
+    font-family: "Long Path", sans-serif;
+    font-size: 30px;
+  }
+
+  .card:hover {
+    transform: scale(1.05);
+  }
+
+  .botones{
+    display: flex;
+    justify-content: center; /* Centra horizontalmente en el eje principal */
+    align-items: center; /* Centra verticalmente en el eje transversal */
+  }
+
+  .formulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5%;
+  }
+  form{
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 8%;
+    padding-right: 8%;
+    border: #78573f solid 2px;
+    border-radius: 5px;
+    background-image: url('./fondo.jpg');
   }
   
   @media (min-width: 768px) {

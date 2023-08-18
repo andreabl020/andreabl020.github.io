@@ -109,6 +109,7 @@ body {
   max-height: 100%; /* Limita la altura máxima al contenedor */
   object-fit: cover; /* Escala y recorta la imagen para ajustar */
   transition: transform 0.3s ease-in-out;
+  
 }
 
 .carousel-slide img:hover {
@@ -299,4 +300,47 @@ a{
   background-position: center bottom; /* Ajusta la posición vertical */
   background-color: #f5f5f5; /* Color de fondo en caso de que la imagen no cargue */
   opacity: 0.8; /* Nivel de transparencia */
+}
+
+/************************************************************/
+/*RESPONSIVE*/
+
+/* Mobile */
+.container {
+  display: grid;
+  height: 100vh;
+
+  grid-template-rows: auto auto auto 1fr;
+  /*gap: 12px;*/
+}
+
+/* Desktop: we will work with a screen that is bigger than 1020px */
+@media (min-width: 1020px) {
+
+  /* The header section takes 12 columns*/
+  header {
+    grid-column: 1 / span 12;
+  }
+
+  /* The navigation section also takes 12 columns*/
+  nav {
+    grid-column: 1 / span 12;
+  }
+
+  /* The main section takes 10 columns start from column 3*/
+  main {
+    grid-column: 1 / span 5;
+  }
+
+  /* The sidebar takes 2 columns start from column 11*/
+  aside {
+    grid-column: 6 / span 2;
+    /*grid-row: 3;*/
+  }
+
+  /* The footer section takes 12 columns start from column 1*/
+  footer {
+    grid-column: 1 / span 12;
+  }
+  
 }
